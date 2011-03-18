@@ -1,0 +1,3 @@
+all:
+  .settings:
+    logging_enabled:        true
