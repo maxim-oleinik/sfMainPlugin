@@ -10,6 +10,7 @@ use sfValidatorSlug;
  */
 class sfValidatorSlugTest extends \PHPUnit_Framework_TestCase
 {
+    protected $preserveGlobalState = false;
     private $validator;
 
     /**
