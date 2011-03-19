@@ -13,6 +13,9 @@ class sfMainPluginConfiguration extends sfPluginConfiguration
         // Merge helpers
         $helpers = array_merge(sfConfig::get('sf_standard_helpers', array()), array('sfMainCommon'));
         sfConfig::set('sf_standard_helpers', $helpers);
+
+        // Form formatter
+        sfWidgetFormSchema::setDefaultFormFormatterName('ListExt');
     }
 
 }
