@@ -3,7 +3,7 @@ namespace Test\sfMainPlugin\Unit\Validator;
 
 require_once __DIR__.'/../../bootstrap/all.php';
 
-use sfValidatorSlug;
+use sfMainPlugin\Validator\sfValidatorSlug;
 
 /**
  * sfValidatorSlugTest

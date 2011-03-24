@@ -1,9 +1,13 @@
 <?php
+namespace sfMainPlugin\Validator;
 
 /**
  * sfValidatorSlug
+ *
+autoload hack
+class sfMainPlugin\Validator\sfValidatorSlug
  */
-class sfValidatorSlug extends sfValidatorString
+class sfValidatorSlug extends \sfValidatorString
 {
     const REGEX = '/^[a-z0-9]+[a-z0-9\-]*[a-z0-9]+$/';
 
@@ -22,7 +26,7 @@ class sfValidatorSlug extends sfValidatorString
         $clean = parent::doClean(trim($value));
 
         if (strpos($value, '--') || !preg_match(self::REGEX, $clean)) {
-            throw new sfValidatorError($this, 'invalid', array('value' => $value));
+            throw new \sfValidatorError($this, 'invalid', array('value' => $value));
         }
 
         return $clean;

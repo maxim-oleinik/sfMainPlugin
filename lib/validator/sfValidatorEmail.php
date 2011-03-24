@@ -6,7 +6,7 @@ require_once __DIR__.'/../vendor/iamcal_email/rfc822.php';
 /**
  * ValidatorEmail
  *
- * aautoload хак
+autoload hack
 class sfMainPlugin\Validator\sfValidatorEmail
  */
 class sfValidatorEmail extends \sfValidatorBase
