@@ -45,6 +45,7 @@ class sfValidatorStringArray extends \sfMainPlugin\Validator\sfValidatorString
                 $result[] = $str;
             }
         }
+        $result = array_keys(array_flip($result));
 
         return $result;
     }

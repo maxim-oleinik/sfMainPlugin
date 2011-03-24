@@ -25,6 +25,7 @@ class sfValidatorStringArrayTest extends \PHPUnit_Framework_TestCase
             "1\n 2 \n\r 3  \r\n4 \r\r\r5" => array('1', '2', '3', '4', '5'),
             "\n\r\n"                      => array(),
             "123"                         => array('123'),
+            "A\nB\nA"                    => array('A', 'B'), // Unique
         );
 
         foreach ($plan as $input => $expected) {
