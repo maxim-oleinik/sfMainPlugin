@@ -2,8 +2,3 @@
 
 // Bootstrap
 require_once __DIR__.'/../../../../test/bootstrap/all.php';
-
-// Plugin
-require_once __DIR__.'/../../lib/validator/sfValidatorString.php';
-require_once __DIR__.'/../../lib/validator/sfValidatorSlug.php';
-require_once __DIR__.'/../../lib/validator/sfValidatorEmail.php';
