@@ -1,0 +1,3 @@
+[submodule "lib/vendor/iamcal_email"]
+	path = lib/vendor/iamcal_email
+	url = https://github.com/iamcal/rfc822.git
