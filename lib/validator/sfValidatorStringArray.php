@@ -1,13 +1,11 @@
 <?php
 namespace sfMainPlugin\Validator;
 
+
 /**
  * sfValidatorStringArray
  *
  * Разбивает строки в массив
-  *
-autoload hack
-class sfMainPlugin\Validator\sfValidatorStringArray
  */
 class sfValidatorStringArray extends \sfMainPlugin\Validator\sfValidatorString
 {

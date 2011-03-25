@@ -1,11 +1,9 @@
 <?php
 namespace sfMainPlugin\Validator;
 
+
 /**
  * sfValidatorString
- *
-autoload hack
-class sfMainPlugin\Validator\sfValidatorString
  */
 class sfValidatorString extends \sfValidatorString
 {
