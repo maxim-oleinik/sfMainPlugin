@@ -31,6 +31,9 @@ class sfMainPluginConfiguration extends sfPluginConfiguration
      */
     public function listenToPostmasterEvents(sfEvent $event)
     {
+        // Load Partial helper for mail templates
+        $this->configuration->loadHelpers(array('Partial'));
+
         if (!isset($this->postmaster)) {
             $this->postmaster = new \sfMainPlugin\Mail\Postmaster(
                 sfContext::getInstance()->getMailer(),
