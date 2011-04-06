@@ -140,3 +140,15 @@ sfMainPlugin
   * **sfMainCommonHelper**  
     Включен по-умолчанию
       * pluralForm($num, $name1, $name2, $name3) - Выбрать множественную форму склонения
+
+
+Модули
+------
+
+ * Социальные виджеты
+
+        [php]
+        include_partial('sfMain/social', array(
+            'host'        => 'http://my-site.com/',
+            'vkontakteId' => 1234567,
+        ));
