@@ -2,7 +2,7 @@
 /**
  * Социальные виджеты
  *
- * @param  string $host
+ * @param  string $url
  * @param  int    $vkontakteId
  */
 ?>
@@ -10,11 +10,11 @@
 <div class="social-buttons">
 
 <?php // FaceBook ?>
-<object style="width: 112px; height: 61px;" data="http://www.facebook.com/plugins/like.php?href=<?php echo $host ?>&amp;layout=box_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;colorscheme=light&amp;height=65"></object>
+<object style="width: 112px; height: 61px;" data="http://www.facebook.com/plugins/like.php?href=<?php echo $url ?>&amp;layout=box_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;colorscheme=light&amp;height=65"></object>
 
 
 <?php // Twitter ?>
-<a href="http://twitter.com/share?url=<?php echo $host; ?>&amp;count=vertical" class="twitter-share-button">Tweet</a>
+<a href="http://twitter.com/share?url=<?php echo $url; ?>&amp;count=vertical" class="twitter-share-button">Tweet</a>
 <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 
 
@@ -27,7 +27,7 @@
 
 <span id="vk_like"></span>
 <script type="text/javascript">
-    VK.Widgets.Like("vk_like", {type: "mini", pageUrl: '<?php echo $host ?>'});
+    VK.Widgets.Like("vk_like", {type: "mini", pageUrl: '<?php echo $url ?>'});
 </script>
 <?php endif; ?>
 

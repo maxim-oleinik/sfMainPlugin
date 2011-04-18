@@ -149,6 +149,6 @@ sfMainPlugin
 
         [php]
         include_partial('sfMain/social', array(
-            'host'        => 'http://my-site.com/',
+            'url'         => 'http://my-site.com/',
             'vkontakteId' => 1234567,
         ));
