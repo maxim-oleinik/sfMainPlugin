@@ -11,7 +11,7 @@
 
 <?php // FaceBook ?>
 <object
-    style="width: 112px; height: 64px; overflow: hidden; vertical-align: bottom;"
+    style="width: 112px; height: 65px; overflow: hidden; vertical-align: bottom;"
     data="http://www.facebook.com/plugins/like.php?href=<?php echo $url ?>&amp;layout=box_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;colorscheme=light&amp;height=60">
 </object>
 
