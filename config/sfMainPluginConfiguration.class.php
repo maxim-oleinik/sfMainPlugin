@@ -23,6 +23,10 @@ class sfMainPluginConfiguration extends sfPluginConfiguration
                 $this->dispatcher->connect($name, array($this, 'listenToPostmasterEvents'));
             }
         }
+
+        $manager = Doctrine_Manager::getInstance();
+        $manager->registerHydrator('FetchPair', 'Doctrine_Hydrator_FetchPair');
+        $manager->registerHydrator('FetchColumn',  'Doctrine_Hydrator_FetchColumn');
     }
 
 
